@@ -1,0 +1,15 @@
+{
+	"tasks": {
+		"start": "deno run -A --watch main.ts",
+		"test": "deno test --allow-net --allow-read --allow-env --allow-hrtime"
+	},
+	"fmt": {
+		"options": {
+			"useTabs": true,
+			"indentWidth": 2,
+			"singleQuote": true,
+			"semiColons": false
+		}
+	},
+	"importMap": "./import_map.json"
+}
