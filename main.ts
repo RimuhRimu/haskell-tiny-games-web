@@ -1,11 +1,10 @@
-// WARNING: the `deno task start` runs this file with flag `-A` -> --allow-all, be aware
-function App(): string {
-	return `this is your App running in ${Deno.cwd()}`
-}
+/// <reference no-default-lib="true" />
+/// <reference lib="dom" />
+/// <reference lib="dom.iterable" />
+/// <reference lib="dom.asynciterable" />
+/// <reference lib="deno.ns" />
 
-export function add(a: number, b: number) {
-	return a + b
-}
+import { start } from '$fresh/server.ts'
+import manifest from './fresh.gen.ts'
 
-// Learn more at https://deno.land/manual/examples/module_metadata#concepts
-if (import.meta.main) console.log(App())
+await start(manifest, { port: 8080 })
