@@ -2,6 +2,7 @@
 	"imports": {
 		"@/": "./",
 		"asserts": "https://deno.land/std@0.178.0/testing/asserts.ts",
+    "octokit": "https://cdn.skypack.dev/octokit?dts",
     "$fresh/": "https://deno.land/x/fresh@1.1.4/",
     "preact": "https://esm.sh/preact@10.11.0",
     "preact/": "https://esm.sh/preact@10.11.0/",

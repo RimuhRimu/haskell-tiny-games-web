@@ -1,0 +1,35 @@
+@import url('./css/header.css');
+@import url('./css/grid.css');
+
+:root {
+  --brand-color1: #042a2b;/*Dark green*/
+  --brand-color2: #5eb1bf;/*Moonstone*/
+  --brand-color3: #cdedf6;/*Light cyan*/
+  --brand-color4: #5e5086;/*Ultra violet*/
+  --brand-color5: #542344;/*Violet JTC*/
+}
+
+html,body {
+  font-family: Inter, Helvetica, Roboto, ui-system;
+  margin: 0;
+}
+
+ol,ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: #fff;
+}
+
+figure {
+  margin: 0;
+}
+
+.app {
+  height: 100%;
+  width: 100%;
+}

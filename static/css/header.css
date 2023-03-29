@@ -1,0 +1,67 @@
+.header {
+  width: 100%;
+  height: 80px;
+  background: var(--brand-color4);
+  display: flex;
+  gap: 10px;
+  justify-content: flex-start;
+}
+
+.logo {
+  height: 60px;
+  padding: 10px;
+}
+
+.headerNav {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.headerNav > ul {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  margin-right: 10px;
+}
+
+.headerNav > ul > li {
+  font-size: 1.2rem;
+  font-weight: 500;
+  cursor: pointer;
+  position: relative;
+}
+
+.headerNav > ul > li::before {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  transition: width 0.3s ease-out; /* add a transition to the width property */
+}
+
+/* different colors for each menu item */
+
+.headerNav > ul > li:nth-child(1)::before {
+  background-color: var(--brand-color1);
+}
+
+.headerNav > ul > li:nth-child(2)::before {
+  background-color: var(--brand-color2);
+}
+
+.headerNav > ul > li:nth-child(3)::before {
+  background-color: var(--brand-color3);
+}
+
+.headerNav > ul > li:nth-child(4)::before {
+  background-color: #f3f;
+}
+
+
+.headerNav > ul > li:hover::before {
+  width: 100%; /* increase the width to 100% on hover */
+}
