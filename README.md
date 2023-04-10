@@ -1,3 +1,3 @@
-# This is a template for Deno
+# A page to see and play the games from tiny-games-hs
 
-Get started with this simple template
+![page](/static/screen.png)
